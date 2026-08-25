@@ -1,0 +1,4 @@
+aws_region        = "ap-southeast-1"
+project_name      = "terraform-demo"
+key_name          = "YOUR-KEY-PAIR-NAME"
+allowed_ssh_cidr  = "YOUR-IP/32"
