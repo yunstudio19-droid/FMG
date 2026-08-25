@@ -1,4 +1,13 @@
-aws_region        = "ap-southeast-1"
-project_name      = "terraform-demo"
-key_name          = "YOUR-KEY-PAIR-NAME"
-allowed_ssh_cidr  = "YOUR-IP/32"
+aws_region   = "ap-southeast-1"
+project_name = "terraform-demo"
+
+# Optional:
+# Enter your existing AWS EC2 key pair name if you want SSH access.
+# key_name = "my-aws-key"
+
+# IMPORTANT:
+# Replace this with your own public IP.
+# Example:
+# allowed_ssh_cidr = "123.123.123.123/32"
+
+allowed_ssh_cidr = "0.0.0.0/0"
