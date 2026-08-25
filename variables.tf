@@ -28,12 +28,6 @@ variable "availability_zone" {
   default     = "ap-southeast-1a"
 }
 
-variable "ami_id" {
-  description = "Amazon Linux AMI ID"
-  type        = string
-  default     = "ami-0c55b159cbfafe1f0"
-}
-
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
@@ -41,8 +35,9 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  description = "Existing AWS EC2 key pair name"
+  description = "Optional AWS EC2 key pair name"
   type        = string
+  default     = null
 }
 
 variable "allowed_ssh_cidr" {
